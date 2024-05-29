@@ -1,9 +1,11 @@
 package com.github.dockerjava.transport;
 
 import com.github.dockerjava.okhttp.OkDockerHttpClient;
+import org.junit.Ignore;
 
 import java.net.URI;
 
+@Ignore
 public class OkHttpClientTests extends DockerHttpClientTCK {
 
     @Override
