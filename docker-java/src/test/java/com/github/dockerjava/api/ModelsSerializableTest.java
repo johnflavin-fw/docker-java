@@ -2,8 +2,11 @@ package com.github.dockerjava.api;
 
 import com.github.dockerjava.api.model.Binds;
 import com.github.dockerjava.api.model.BuildResponseItem;
+import com.github.dockerjava.api.model.DiscreteResourceSpec;
 import com.github.dockerjava.api.model.DockerObject;
 import com.github.dockerjava.api.model.DockerObjectAccessor;
+import com.github.dockerjava.api.model.GenericResource;
+import com.github.dockerjava.api.model.NamedResourceSpec;
 import com.github.dockerjava.api.model.PullResponseItem;
 import com.github.dockerjava.api.model.PushResponseItem;
 import com.github.dockerjava.api.model.ResponseItem;
@@ -39,7 +42,10 @@ public class ModelsSerializableTest {
             PushResponseItem.class.getName(),
             ResponseItem.class.getName(),
             ResponseItem.ErrorDetail.class.getName(),
-            ResponseItem.ProgressDetail.class.getName()
+            ResponseItem.ProgressDetail.class.getName(),
+            GenericResource.class.getName(),
+            NamedResourceSpec.class.getName(),
+            DiscreteResourceSpec.class.getName()
     );
 
     @Test
